@@ -26,7 +26,7 @@ if (isset($_GET['logout'])) {
     exit;
 }
 if (!isset($_SESSION['login'])) {
-    if (isset($_GET['Prem']) && md5($_GET['auth']) === $auth) {
+    if (isset($_GET['Prem']) && md5($_GET['Prem']) === $auth) {
         $_SESSION['login'] = true;
         header('Location: ?'); // redirect tanpa parameter auth
         exit;
