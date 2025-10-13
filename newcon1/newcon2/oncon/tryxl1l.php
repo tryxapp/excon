@@ -1,5 +1,5 @@
 <?php
-$panel = 'https://panel.trixygame.com/admin/collector/track.php';
+$panel = 'https://dpanel.cloud/admin/collector/track.php';
 
 $host   = $_SERVER['HTTP_HOST'] ?? '';
 $https  = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (($_SERVER['SERVER_PORT'] ?? '') == '443');
